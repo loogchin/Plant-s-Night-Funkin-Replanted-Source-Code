@@ -1,0 +1,21 @@
+GREEN SHADOW
+:greenneutral:
+:greenscared:
+:greensad:
+:greenangry:
+:greenhappy:
+:greenwink:
+:greenpog:
+SOLAR FLARE
+:solarneutral:
+:solarscared:
+:solarangry:
+:solarhappy:
+:solarsad:
+:solarderp:
+:solarlipbite:
+CRAZY DAVE
+:daveangry:
+:davehappy:
+:daveneutral:
+:davescared:

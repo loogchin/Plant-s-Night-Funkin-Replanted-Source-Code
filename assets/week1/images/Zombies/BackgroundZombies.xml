@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="BackgroundZombies.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="ZombieBackgroundDancin0000" x="5" y="5" width="1769" height="972" frameX="-25" frameY="-22" frameWidth="1800" frameHeight="996"/>
+	<SubTexture name="ZombieBackgroundDancin0001" x="5" y="5" width="1769" height="972" frameX="-25" frameY="-22" frameWidth="1800" frameHeight="996"/>
+	<SubTexture name="ZombieBackgroundDancin0002" x="1779" y="5" width="1769" height="986" frameX="-25" frameY="-8" frameWidth="1800" frameHeight="996"/>
+	<SubTexture name="ZombieBackgroundDancin0003" x="1779" y="5" width="1769" height="986" frameX="-25" frameY="-8" frameWidth="1800" frameHeight="996"/>
+	<SubTexture name="ZombieBackgroundDancin0004" x="3553" y="5" width="1765" height="992" frameX="-34" frameY="-2" frameWidth="1800" frameHeight="996"/>
+	<SubTexture name="ZombieBackgroundDancin0005" x="3553" y="5" width="1765" height="992" frameX="-34" frameY="-2" frameWidth="1800" frameHeight="996"/>
+	<SubTexture name="ZombieBackgroundDancin0006" x="5323" y="5" width="1749" height="994" frameX="-51" frameY="0" frameWidth="1800" frameHeight="996"/>
+	<SubTexture name="ZombieBackgroundDancin0007" x="5323" y="5" width="1749" height="994" frameX="-51" frameY="0" frameWidth="1800" frameHeight="996"/>
+	<SubTexture name="ZombieBackgroundDancin0008" x="5" y="1004" width="1749" height="994" frameX="-51" frameY="0" frameWidth="1800" frameHeight="996"/>
+	<SubTexture name="ZombieBackgroundDancin0009" x="1759" y="1004" width="1749" height="994" frameX="-51" frameY="0" frameWidth="1800" frameHeight="996"/>
+	<SubTexture name="ZombieBackgroundDancin0010" x="3513" y="1004" width="1749" height="991" frameX="-51" frameY="-3" frameWidth="1800" frameHeight="996"/>
+	<SubTexture name="ZombieBackgroundDancin0011" x="5267" y="1004" width="1749" height="991" frameX="-51" frameY="-3" frameWidth="1800" frameHeight="996"/>
+	<SubTexture name="ZombieBackgroundDancin0012" x="5" y="2003" width="1747" height="962" frameX="-50" frameY="-10" frameWidth="1800" frameHeight="996"/>
+	<SubTexture name="ZombieBackgroundDancin0013" x="1757" y="2003" width="1746" height="957" frameX="-50" frameY="-15" frameWidth="1800" frameHeight="996"/>
+	<SubTexture name="ZombieBackgroundDancin0014" x="3508" y="2003" width="1745" height="950" frameX="-50" frameY="-22" frameWidth="1800" frameHeight="996"/>
+	<SubTexture name="ZombieBackgroundDancin0015" x="3508" y="2003" width="1745" height="950" frameX="-50" frameY="-22" frameWidth="1800" frameHeight="996"/>
+	<SubTexture name="ZombieBackgroundDancin0016" x="5258" y="2003" width="1761" height="955" frameX="-34" frameY="-17" frameWidth="1800" frameHeight="996"/>
+	<SubTexture name="ZombieBackgroundDancin0017" x="5258" y="2003" width="1761" height="955" frameX="-34" frameY="-17" frameWidth="1800" frameHeight="996"/>
+	<SubTexture name="ZombieBackgroundDancin0018" x="5" y="2970" width="1788" height="955" frameX="-7" frameY="-17" frameWidth="1800" frameHeight="996"/>
+	<SubTexture name="ZombieBackgroundDancin0019" x="5" y="2970" width="1788" height="955" frameX="-7" frameY="-17" frameWidth="1800" frameHeight="996"/>
+	<SubTexture name="ZombieBackgroundDancin0020" x="1798" y="2970" width="1795" height="955" frameX="0" frameY="-17" frameWidth="1800" frameHeight="996"/>
+	<SubTexture name="ZombieBackgroundDancin0021" x="3598" y="2970" width="1795" height="955" frameX="0" frameY="-17" frameWidth="1800" frameHeight="996"/>
+	<SubTexture name="ZombieBackgroundDancin0022" x="5398" y="2970" width="1794" height="979" frameX="0" frameY="-17" frameWidth="1800" frameHeight="996"/>
+	<SubTexture name="ZombieBackgroundDancin0023" x="5" y="3954" width="1794" height="979" frameX="0" frameY="-17" frameWidth="1800" frameHeight="996"/>
+	<SubTexture name="ZombieBackgroundDancin0024" x="1804" y="3954" width="1782" height="977" frameX="-12" frameY="-17" frameWidth="1800" frameHeight="996"/>
+	<SubTexture name="ZombieBackgroundDancin0025" x="3591" y="3954" width="1782" height="977" frameX="-12" frameY="-17" frameWidth="1800" frameHeight="996"/>
+	<SubTexture name="ZombieBackgroundDancin0026" x="5378" y="3954" width="1760" height="974" frameX="-34" frameY="-20" frameWidth="1800" frameHeight="996"/>
+	<SubTexture name="ZombieBackgroundDancin0027" x="5" y="4938" width="1760" height="972" frameX="-34" frameY="-22" frameWidth="1800" frameHeight="996"/>
+</TextureAtlas>
