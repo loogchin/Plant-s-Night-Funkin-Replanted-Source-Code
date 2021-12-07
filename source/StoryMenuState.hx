@@ -196,6 +196,10 @@ class StoryMenuState extends MusicBeatState
 
 		trace("Line 165");
 
+		#if mobileC
+        addVirtualPad(FULL, A_B);
+        #end
+
 		super.create();
 	}
 
@@ -304,8 +308,11 @@ class StoryMenuState extends MusicBeatState
 			{
 				if (curWeek == 1)
 				{
-					FlxG.switchState (new VideoState('assets/videos/CD/CrazyDaveStart.webm', new PlayState()));
-					LoadingState.loadAndSwitchState(new PlayState(), true);
+					//LoadingState.loadAndSwitchState(new VideoState2('assets/videos/CD/CrazyDaveStart.webm', new PlayState()));
+					//LoadingState.loadAndSwitchState(new PlayState(), true);
+					FlxG.switchState(new VideoState2('assets/videos/CD/CrazyDaveStart.webm', function() {
+						LoadingState.loadAndSwitchState(new PlayState());
+					}));
 				}
 				else
 				{

@@ -1,3 +1,5 @@
+//do not use this unstable shit
+/*
 package;
 
 import flixel.FlxState;
@@ -11,18 +13,16 @@ import flixel.util.FlxTimer;
 import lime.app.Application;
 import flixel.system.FlxSound;
 import openfl.utils.Assets;
-import openfl.utils.AssetType;
 
 import openfl.Lib;
-
-import webm.WebmPlayer;
 
 using StringTools;
 
 class VideoState extends MusicBeatState
 {
 	public var leSource:String = "";
-	public var transClass:FlxState;
+	//public var transClass:FlxState;
+	public var transFunction:Void->Void;
 	public var txt:FlxText;
 	public var fuckingVolume:Float = 1;
 	public var notDone:Bool = true;
@@ -34,21 +34,14 @@ class VideoState extends MusicBeatState
 	public var defaultText:String = "";
 	public var doShit:Bool = false;
 	public var pauseText:String = "Press P To Pause/Unpause";
-	public var autoPause:Bool = false;
-	public var musicPaused:Bool = false;
 
-	public function new(source:String, toTrans:FlxState, frameSkipLimit:Int = -1, autopause:Bool = false)
+	public function new(source:String, toTrans:Void->Void)
 	{
 		super();
 		
-		autoPause = autopause;
-		
 		leSource = source;
-		transClass = toTrans;
-		if (frameSkipLimit != -1 && GlobalVideo.isWebm)
-		{
-			WebmPlayer.SKIP_STEP_LIMIT = frameSkipLimit;	
-		}
+		//transClass = toTrans;
+		transFunction = toTrans;
 	}
 	
 	override function create()
@@ -104,7 +97,7 @@ class VideoState extends MusicBeatState
 			GlobalVideo.get().restart();
 		} else {
 			GlobalVideo.get().play();
-		}
+		}*/
 		
 		/*if (useSound)
 		{*/
@@ -112,7 +105,7 @@ class VideoState extends MusicBeatState
 		
 			/*new FlxTimer().start(0.1, function(tmr:FlxTimer)
 			{*/
-				vidSound.time = vidSound.length * soundMultiplier;
+				//vidSound.time = vidSound.length * soundMultiplier;
 				/*new FlxTimer().start(1.2, function(tmr:FlxTimer)
 				{
 					if (useSound)
@@ -120,18 +113,12 @@ class VideoState extends MusicBeatState
 						vidSound.time = vidSound.length * soundMultiplier;
 					}
 				}, 0);*/
-				doShit = true;
+				//doShit = true;
 			//}, 1);
 		//}
-		
-		if (autoPause && FlxG.sound.music != null && FlxG.sound.music.playing)
-		{
-			musicPaused = true;
-			FlxG.sound.music.pause();
-		}
-	}
+	//}
 	
-	override function update(elapsed:Float)
+	/*override function update(elapsed:Float)
 	{
 		super.update(elapsed);
 		
@@ -211,13 +198,9 @@ class VideoState extends MusicBeatState
 			notDone = false;
 			FlxG.sound.music.volume = fuckingVolume;
 			txt.text = pauseText;
-			if (musicPaused)
-			{
-				musicPaused = false;
-				FlxG.sound.music.resume();
-			}
 			FlxG.autoPause = true;
-			FlxG.switchState(transClass);
+			//FlxG.switchState(transClass);
+			transFunction();
 		}
 		
 		if (GlobalVideo.get().played || GlobalVideo.get().restarted)
@@ -230,4 +213,4 @@ class VideoState extends MusicBeatState
 		GlobalVideo.get().stopped = false;
 		GlobalVideo.get().ended = false;
 	}
-}
+}*/

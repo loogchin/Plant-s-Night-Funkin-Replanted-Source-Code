@@ -21,7 +21,6 @@ class OptionsMenu extends MusicBeatState
 
 	var options:Array<OptionCatagory> = [
 		new OptionCatagory("Gameplay", [
-			new DFJKOption(controls),
 			new Judgement("Customize your Hit Timings (LEFT or RIGHT)"),
 			#if desktop
 			new FPSCapOption("Cap your FPS (Left for -10, Right for +10. SHIFT to go faster)"),
@@ -48,6 +47,11 @@ class OptionsMenu extends MusicBeatState
 			#end
 			new WatermarkOption("Turn off all watermarks from the engine.")
 			
+		]),
+		
+		new OptionCatagory("Mobile settings", [
+			new CustomControls("edit a control"),
+			new About("about android port")
 		])
 		
 	];
@@ -87,6 +91,10 @@ class OptionsMenu extends MusicBeatState
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
+
+		#if mobileC
+		addVirtualPad(FULL, A_B);
+		#end
 
 		super.create();
 	}

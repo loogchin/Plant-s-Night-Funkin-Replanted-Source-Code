@@ -19,10 +19,10 @@ import webm.WebmPlayer;
 
 using StringTools;
 
-class VideoState extends MusicBeatState
+class VideoState2 extends MusicBeatState
 {
 	public var leSource:String = "";
-	public var transClass:FlxState;
+	public var transFunction:Void->Void;
 	public var txt:FlxText;
 	public var fuckingVolume:Float = 1;
 	public var notDone:Bool = true;
@@ -37,14 +37,14 @@ class VideoState extends MusicBeatState
 	public var autoPause:Bool = false;
 	public var musicPaused:Bool = false;
 
-	public function new(source:String, toTrans:FlxState, frameSkipLimit:Int = -1, autopause:Bool = false)
+	public function new(source:String, toTrans:Void->Void, frameSkipLimit:Int = -1, autopause:Bool = false)
 	{
 		super();
 		
 		autoPause = autopause;
 		
 		leSource = source;
-		transClass = toTrans;
+		transFunction = toTrans;
 		if (frameSkipLimit != -1 && GlobalVideo.isWebm)
 		{
 			WebmPlayer.SKIP_STEP_LIMIT = frameSkipLimit;	
@@ -217,7 +217,7 @@ class VideoState extends MusicBeatState
 				FlxG.sound.music.resume();
 			}
 			FlxG.autoPause = true;
-			FlxG.switchState(transClass);
+			transFunction();
 		}
 		
 		if (GlobalVideo.get().played || GlobalVideo.get().restarted)
